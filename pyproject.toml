@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "learn-django"
+version = "0.1.0"
+description = ""
+authors = ["gabriel chaves <gabrieloliveirachaves754@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
