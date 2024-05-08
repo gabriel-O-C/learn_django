@@ -3,15 +3,24 @@
 
 <body>
 
-  <form class="grid justify-center w-screen mt-8 place-items-center">
-    <div class="flex gap-2">
-      <input class="w-full px-4 py-1 border border-gray-500 rounded lg:min-w-[600px]" type="search"
-        placeholder="buscar..." />
-      <button type="submit" class="px-4 py-1 text-white rounded bg-sky-500">Buscar</button>
+  <header>
+    <form class="grid justify-center w-screen mt-8 place-items-center">
+      <div class="flex gap-2">
+        <input class="w-full px-4 py-1 outline-none border border-gray-500 rounded lg:min-w-[600px]" type="search"
+          placeholder="buscar..." />
+        <button type="submit" class="px-4 py-1 text-white transition-colors rounded bg-sky-500 hover:bg-sky-400">Search</button>
 
 
-    </div>
-  </form>
+      </div>
+    </form>
+
+  </header>
+
+  <main class="grid items-center self-center w-11/12 grid-cols-1 gap-8 p-4 mx-auto mt-24 xl:grid-cols-3">
+    {% for i in cards_list %}
+      {% include 'contents/partials/card.html' %} 
+    {% endfor %}
+  </main>
 </body>
 
 </html>
