@@ -1,0 +1,25 @@
+{% include 'contents/partials/head.html' %}
+{% include 'contents/partials/header.html' %}
+
+<body>
+
+  <header>
+    <form class="grid justify-center w-screen mt-8 place-items-center">
+      <div class="flex gap-2">
+        <input class="w-full px-4 py-1 outline-none border border-gray-500 rounded lg:min-w-[600px]" type="search"
+          placeholder="buscar..." />
+        <button type="submit" class="px-4 py-1 text-white transition-colors rounded bg-sky-500 hover:bg-sky-400">Search</button>
+
+
+      </div>
+    </form>
+
+  </header>
+
+	{% block content %}
+
+	{% endblock %}
+</body>
+
+</html>
+
